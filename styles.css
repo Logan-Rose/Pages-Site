@@ -7,15 +7,18 @@ body{
 .container{
     flex-direction: column;
 }
+.welcomeHeader{
+    display:flex;
+    justify-content: center;
+}
 h1{
-    padding-top: 50px;
+    padding-top: 20px;
     font-size: 5em;
     font-weight: 100;
     margin-bottom: 0px;
 }
 h2{
     margin-top: 0px;
-    padding-bottom: 20px;
     font-size: 3.5em;
     font-weight: 100;
 }
@@ -46,3 +49,17 @@ ul{
     justify-content: center;
     
 }
+
+.slideshow{
+
+}
+.mySlides {
+    width: 1000px;
+    object-fit: cover;
+
+    overflow: none;
+    height: 400px;
+    display:none
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
