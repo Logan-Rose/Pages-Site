@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>Lab 1</title>
+    <meta name="description" content="Logan's SEG 3125 work">
+    <meta name="author" content="Logan Rose">
+
+    <link rel="stylesheet" href="./../styles.css">
+    <link rel="stylesheet" href="lab1.css">
+
+    </head>
+
+    <body>
+    <div class="content">
+        <h2>
+            Lab 1
+        </h1>
+        <ul>
+            <li>
+                <button type="button" class="collapsible">A Link to the website being analyzed</button>
+                <div class="collapsible-content">
+                    <a href="https://www.google.ca">Google</a>
+                </div>
+            </li>
+            <li>
+                <button type="button" class="collapsible">An Image of the website being analyzed</button>
+                <div class="collapsible-content">
+                    <img href src="screenshot.jpg">
+                </div>
+            </li>
+            <li>
+                <button type="button" class="collapsible">An Image of the website being analyzed that acts as a link</button>
+                <div class="collapsible-content">
+                    <a href="https://www.google.ca"><img href src="screenshot.jpg"></a>
+                </div>
+            </li>
+            <li>
+                <button type="button" class="collapsible">A UI survey about the website</button>
+                <div class="collapsible-content">
+                    <form name="survey">
+                        <div class="question">
+                            <p>1. &nbsp; Describe the User Interface of the website in 1 word:</p>
+                            <br>
+                            &nbsp;&nbsp;<input type="text" name="oneWord">
+                        </div>
+                        <br>
+                        <div class="question">
+                            <p>2. &nbsp; On a scale of 1 to 5, how would you rate the design of this site?</p>
+                            <br>
+                            &nbsp;&nbsp;<table>
+                                <tr>
+                                    <td><input type="radio" name="rating"></td>
+                                    <td><input type="radio" name="rating"></td>
+                                    <td><input type="radio" name="rating"></td>
+                                    <td><input type="radio" name="rating"></td>
+                                    <td><input type="radio" name="rating"></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <div class="question">
+                            <p>3. &nbsp; Visually, the site is:</p>
+                            <br>
+                            &nbsp;&nbsp;<select name="standOut">
+                                <option>Appealing</option>
+                                <option>Standard</option>
+                                <option>Boring</option>
+                                <option>Surprising</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="question">          
+                            <p>4. &nbsp; From the available options, what stands out to you from the site?:</p>
+                            <br>
+                            &nbsp;&nbsp;<table>
+                                <tr>
+                                    <td><input type="radio" name="Colors"></td>
+                                    <td><input type="radio" name="Fonts"></td>
+                                    <td><input type="radio" name="Navigability"></td>
+                                    <td><input type="radio" name="Understandability"></td>
+                                </tr>
+                                <tr>
+                                    <td>Colors</td>
+                                    <td>Fonts</td>
+                                    <td>Navigability</td>
+                                    <td>Understandability</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <br>
+                        <div class="question">
+                            <p>5. &nbsp; Additional Comments:</p>
+                            <br>
+                            &nbsp;&nbsp;<textarea name="comments" cols="40" rows="5"></textarea>
+                        </div>
+                        <br>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+            </li>
+        </ul>
+        
+        <script src="./lab1.js"></script>
+        
+        <footer>
+            Logan Rose<br>
+            May 2021<br>
+            <a class="blank" href="../index.html">Home</a>
+        </footer>
+    </body>
+</html>

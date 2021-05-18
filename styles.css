@@ -30,11 +30,11 @@ li{
     padding: 10px;
 }
 
-a:hover{
+.menuText:hover{
     transition: 0.25s;
     color: aquamarine;
 }
-a{
+.menuText{
     text-decoration: none;
     color: black;
 }
