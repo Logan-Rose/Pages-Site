@@ -97,6 +97,11 @@ function restrictListProducts(prods, restriction, organic) {
 				returnProds.push(prods[i]);
 			}
 		}
+		else if (restriction == "Both" && (prods[i].nutFree == true) && (prods[i].lactoseFree == true)){
+			if( (organic && prods[i].organic) || (!organic) ){
+				returnProds.push(prods[i]);
+			}
+		}
 		else if (restriction == "None"){
 			if( (organic && prods[i].organic) || (!organic) ){
 				returnProds.push(prods[i]);
