@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+  <!-- Tab content -->
+  <div class="container">
+    <div class="header">
+      <h1>
+        Logan's Groceries
+      </h1>
+    </div>
+
+    <div id="Client" class="tabcontent">
+      <div class="tabContentBody">
+        <h3>Client Information</h3>
+
+          <input type="checkbox" id="nuts" name="nuts" onchange="populateListProductChoices()">
+          <label>Nut Free<label>
+          <br>
+
+          <input type="checkbox" id="lactose" name="lactose" onchange="populateListProductChoices()">
+          <label>Lactose Free<label>
+          <br>
+          <input type="checkbox" id="organic" name="organic" onchange="populateListProductChoices()">
+          <label>Organic<label>
+      </div>
+      <div class="buttons">
+        <button disabled>Back</button>
+        <button onclick="openInfo('Products')">Next</button>
+      </div>
+
+    </div>
+
+    <div id="Products" class="tabcontent">
+      <div class="tabContentBody">
+        <h3>Your targeted products</h3>
+        <div id="displayProduct"></div>
+      </div>
+      <div class="buttons">
+        <button onclick="openInfo('Client')">Back</button>
+        <button onclick="openInfo('Cart'); selectedItems()">Next</button>
+      </div>
+
+    </div>
+
+    <div id="Cart" class="tabcontent">
+      <div class="tabContentBody">
+      <h3>Cart</h3>
+      <p>Here is your cart.</p>
+      <div id="displayCart"></div>
+      </div>
+      <div class="buttons">
+        <button onclick="openInfo('Products')">Back</button>
+        <button disabled>Next</button>
+      </div>
+    </div>
+
+
+    <footer>
+        Logan Rose<br>
+        May 2021<br>
+        <a class="blank" href="../index.html">Home</a>
+    </footer>
+  </div>
+  <script src="scripts/groceries.js"></script>
+  <script src="scripts/main.js"></script>
+  </body>
+</html>

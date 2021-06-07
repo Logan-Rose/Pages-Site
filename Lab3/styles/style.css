@@ -1,0 +1,76 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  text-align: center;
+  padding: 6px 12px;
+  border-top: none;
+  min-height: 500px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  padding: 10px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.buttons{
+  position:static;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabContentBody{
+  display: flex;
+  display: block;
+  height: 400px;
+}
+
+button{
+  height: 50px;
+  width: 75px;
+  border: none;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.header{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-image: url("../groceries-family-month.jpg");
+}
