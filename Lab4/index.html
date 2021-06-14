@@ -31,14 +31,16 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     </nav>
 
     <div class="p-3">
-      <div class="row">
-        <div class="col">        
-          <h1> About us</h1>
-          <p class="p-4 my-3" style="font-size: 25px">We are a Physiotherapy clinic located in downtown Ottawa.</p>
-          <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
-        </div>
-        <div class="col">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.3907459217676!2d-75.68253358423424!3d45.42162404430387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05084abdc789%3A0xf75fe77b0d00ad40!2s127%20Louis-Pasteur%20Private%2C%20Ottawa%2C%20ON%20K1N%206N5!5e0!3m2!1sen!2sca!4v1623530896110!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="card p-3">
+        <div class="row">
+          <div class="col">        
+            <h1> About us</h1>
+            <p class="p-4 my-3" style="font-size: 25px">We are a Physiotherapy clinic located in downtown Ottawa.</p>
+            <p style="font-size: 25px; padding-left: 1.5rem">We like to crtack backs, stab you with needles, train you with exercises&mdash;Whatever it takes to get you back to being you!</p>
+          </div>
+          <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.3907459217676!2d-75.68253358423424!3d45.42162404430387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05084abdc789%3A0xf75fe77b0d00ad40!2s127%20Louis-Pasteur%20Private%2C%20Ottawa%2C%20ON%20K1N%206N5!5e0!3m2!1sen!2sca!4v1623530896110!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -55,89 +57,63 @@ Many websites will use what is called CSS grid layouts, where you will have a he
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td>Acupuncture</td>
-                <td>Placeholder 2</td>
+                <td>Stabby needles that make you feel better</td>
             </tr>
-            <tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td>Neurological Rehab</td>
-                <td>Placeholder 2</td>
+                <td>Getcha brain fixed</td>
             </tr>
-            <tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td>Yoga Therapy</td>
-                <td>Placeholder 2</td>
+                <td>Do bendy positions to feel good</td>
             </tr>
-            <tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td>Arthritis Care</td>
-                <td>Placeholder 2</td>
+                <td>Make your mones stop hurting</td>
             </tr>
-            <tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td>Concussion Treatment</td>
-                <td>Placeholder 2</td>
+                <td>Help your head stop hurting</td>
             </tr>
-            <tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td>Joint Pain</td>
-                <td>Placeholder 2</td>
+                <td>What are you 60?</td>
             </tr>
         </tbody>
     </table>
-    <h1>Here is an alert!</h1>
-    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
-    https://getbootstrap.com/docs/5.0/components/alerts/
-    -->
-    <p>This indicated something important in the page</p>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Yikes!</strong> Perhaps you left one of the fields empty for this to appear?
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
-    <h1>Button States</h1>
-    <!--
-    Buttons can be used for submitting forms, triggering events among many other things.
-    https://getbootstrap.com/docs/5.0/components/buttons/
-    -->
-
-    <button type="button" class="btn btn-warning">Primary Button</button>
-    <button type="button" class="btn btn-warning active">Active Button</button>
-    <button type="button" class="btn btn-warning" disabled>Disabled Button</button>
-
-    <h1>Modal Example</h1>
-
-    <!-- Button trigger modal
-    We use the same button code from above, but now we can trigger a modal to appear.
-    The bootstrap tutorial includes many different types of modals that you can explore
-    https://getbootstrap.com/docs/5.0/components/modal/
-    -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Book Service</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    In the body we can add various components. In this example some radio buttons
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            No
-                        </label>
-                    </div>
+                  
+                  Name:<br>
+                  <input type="text"><br>
+                  Phone Number:<br>
+                  <input type="tel"><br><br>
+
+                  Date:<br>
+                  <input type="date"><br>
+                  Time:<br>
+                  <input type="time"><br>
+                  <br>                  
+                  Physiotherapist:<br>
+                  <select >
+                    <option>Dr. Vivian Jenson</option>
+                    <option>Dr. Eric Kim</option>
+                    <option>Chantal Erikson</option>
+                  </select>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary"data-bs-dismiss="modal">Book Appointment</button>
                 </div>
             </div>
         </div>
@@ -152,94 +128,51 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 
 
     <div class="p-3">
-      <div class="row p-4">
-        <div class="col">        
-          <h1>Doctor 1</h1>
-          <img src="images/doctor.jpg" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-          <p class="p-4 my-3" style="font-size: 25px">We are a Physiotherapy clinic located in downtown Ottawa.</p>
-          <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
-        </div>
-      </div>
-
-      <div class="row p-4">
-        <div class="col">        
-          <h1>Doctor 2</h1>
-          <img src="images/doctor2.jpg" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-          <p class="p-4 my-3" style="font-size: 25px">We are a Physiotherapy clinic located in downtown Ottawa.</p>
-          <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
+      <div class="card">
+          <div class="row p-4">
+          <div class="col">        
+            <h1>Dr. Vivian Jenson</h1>
+            <img src="images/doctor.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <p class="p-4 my-3" style="font-size: 25px">Meet Dr. Jenson. She has been a practicing physiotherapist for the past 15 years, and loves to see her patients get the best treatment possible. When Dr. Jensen isnt working she loves to play with her 3 puppies, Angus and David.</p>
+          </div>
         </div>
       </div>
+      <br>
 
-      <div class="row p-4">
-        <div class="col">        
-          <h1>Doctor 3</h1>
-          <img src="images/doctor3.jpg" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-          <p class="p-4 my-3" style="font-size: 25px">We are a Physiotherapy clinic located in downtown Ottawa.</p>
-          <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
+      <div class="card">
+        <div class="row p-4">
+          <div class="col">        
+            <h1>Dr. Eric Kim</h1>
+            <img src="images/doctor2.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <p class="p-4 my-3" style="font-size: 25px">This is Dr. Kim. He has been a practicing physiotherapist for the past 5 years, prior to becomign a doctor, Dr. Kim worked in the Army. Now far removed from his years committing war crimes in the middle east at the behest of the American government, Dr. Kim loves to see his patients live their best lives!</p>
+          </div>
         </div>
       </div>
-
+      <br>
+      <div class="card">
+        <div class="row p-4">
+          <div class="col">        
+            <h1>Chantal Erikson</h1>
+            <img src="images/doctor3.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <p class="p-4 my-3" style="font-size: 25px">This is Chantal, she isnt a doctor yet, but likes to crack people's backs. everyone has got to start somewhere right? Chantal has a background in crystal therapy and traditional rain dancing.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--
-    We can also use buttons to expand some hidden options
-    https://getbootstrap.com/docs/5.0/components/collapse/
-    -->
-    <h1>More Information</h1>
-
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Button To Expand Options
-    </button>
-
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            Here we have some hidden data to avoid cluttering the page with information
-        </div>
-    </div>
-
-    <!-- This example is using what is called an accordian, this is one of three examples
-    https://getbootstrap.com/docs/5.0/components/accordion/
-    -->
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
-                </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can place information in this area</div>
-            </div>
-        </div>
-    </div>
-
+    <br><br>
+    <footer>
+      Logan Rose<br>
+      May 2021<br>
+      <a class="blank" href="../index.html">Home</a>
+    </footer>
 </div>
+
 <!-- here we input our javascript helper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
