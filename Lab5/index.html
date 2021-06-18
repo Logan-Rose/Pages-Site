@@ -1,0 +1,179 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Module 4 Lab</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar p-4 my-4 mr-4 justify-content-center">
+        <h1><img src="images/company_logo.png" width="100" height="100">Back Crakin' Physio</h1>
+    </nav>
+
+    <div class="p-3">
+      <div class="card p-3">
+        <div class="row">
+          <div class="col">        
+            <h1> About us</h1>
+            <p class="p-4 my-3" style="font-size: 25px">We are a Physiotherapy clinic located in downtown Ottawa.</p>
+            <p style="font-size: 25px; padding-left: 1.5rem">We like to crtack backs, stab you with needles, train you with exercises&mdash;Whatever it takes to get you back to being you!</p>
+          </div>
+          <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.3907459217676!2d-75.68253358423424!3d45.42162404430387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05084abdc789%3A0xf75fe77b0d00ad40!2s127%20Louis-Pasteur%20Private%2C%20Ottawa%2C%20ON%20K1N%206N5!5e0!3m2!1sen!2sca!4v1623530896110!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Service</h2></th>
+                <th scope="col"><h2>Description</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <td>Acupuncture</td>
+                <td>Stabby needles that make you feel better</td>
+            </tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <td>Neurological Rehab</td>
+                <td>Getcha brain fixed</td>
+            </tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <td>Yoga Therapy</td>
+                <td>Do bendy positions to feel good</td>
+            </tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <td>Arthritis Care</td>
+                <td>Make your mones stop hurting</td>
+            </tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <td>Concussion Treatment</td>
+                <td>Help your head stop hurting</td>
+            </tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <td>Joint Pain</td>
+                <td>What are you 60?</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                  Name:<br>
+                  <input type="text"><br>
+                  Phone Number:<br>
+                  <input type="tel"><br><br>
+
+                  Date:<br>
+                  <input type="date"><br>
+                  Time:<br>
+                  <input type="time"><br>
+                  <br>                  
+                  Physiotherapist:<br>
+                  <select >
+                    <option>Dr. Vivian Jenson</option>
+                    <option>Dr. Eric Kim</option>
+                    <option>Chantal Erikson</option>
+                  </select>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"data-bs-dismiss="modal">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <h1>Meet the Physicians!</h1>
+
+
+    <div class="p-3">
+      <div class="card">
+          <div class="row p-4">
+          <div class="col">        
+            <h1>Dr. Vivian Jenson</h1>
+            <img src="images/doctor.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <p class="p-4 my-3" style="font-size: 25px">Meet Dr. Jenson. She has been a practicing physiotherapist for the past 15 years, and loves to see her patients get the best treatment possible. When Dr. Jensen isnt working she loves to play with her 3 puppies, Angus and David.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="row p-4">
+          <div class="col">        
+            <h1>Dr. Eric Kim</h1>
+            <img src="images/doctor2.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <p class="p-4 my-3" style="font-size: 25px">This is Dr. Kim. He has been a practicing physiotherapist for the past 5 years, prior to becomign a doctor, Dr. Kim worked in the Army. Now far removed from his years committing war crimes in the middle east at the behest of the American government, Dr. Kim loves to see his patients live their best lives!</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="row p-4">
+          <div class="col">        
+            <h1>Chantal Erikson</h1>
+            <img src="images/doctor3.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <p class="p-4 my-3" style="font-size: 25px">This is Chantal, she isnt a doctor yet, but likes to crack people's backs. everyone has got to start somewhere right? Chantal has a background in crystal therapy and traditional rain dancing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <footer>
+      Logan Rose<br>
+      May 2021<br>
+      <a class="blank" href="../index.html">Home</a>
+    </footer>
+</div>
+
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
