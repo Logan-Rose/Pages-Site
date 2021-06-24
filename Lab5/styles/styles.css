@@ -22,3 +22,12 @@ h1{
 .service:hover{
     cursor: pointer;
 }
+.navbar{
+    background-color: #f5e9dc;
+}
+
+.btn:hover{
+    transition-duration: 0.25s;
+    background-color: whitesmoke;
+    text-decoration: underline;
+}
