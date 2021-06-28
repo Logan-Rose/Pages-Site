@@ -31,3 +31,7 @@ h1{
     background-color: whitesmoke;
     text-decoration: underline;
 }
+input:hover, select:hover{
+    border: solid 2px black;
+    background: whitesmoke;
+}

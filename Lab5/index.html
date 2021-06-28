@@ -66,6 +66,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/content/tables/
     -->
     <h1 id="servicesHeader" >Our Services</h1><br>
+    <h2><img src="https://img.icons8.com/ios/50/000000/body.png"/>&nbsp; Physical Care</h2>
     <table id="services" class="table table-info table-hover">
         <thead>
             <tr>
@@ -73,33 +74,59 @@ Many websites will use what is called CSS grid layouts, where you will have a he
                 <th scope="col"><h2>Description</h2></th>
             </tr>
         </thead>
+
         <tbody>
             <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <td><img src="https://img.icons8.com/small/64/000000/needle.png"/>&nbsp; Acupuncture</td>
+                <td><img src="https://img.icons8.com/material-outlined/64/000000/acupuncture--v1.png"/>&nbsp; Acupuncture</td>
                 <td>Stabby needles that make you feel better</td>
             </tr>
             <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <td><img src="https://img.icons8.com/small/64/000000/for-experienced.png"/>&nbsp; Neurological Rehab</td>
-                <td>Getcha brain fixed</td>
-            </tr>
-            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <td><img src="https://img.icons8.com/small/64/000000/yoga.png"/>&nbsp; Yoga Therapy</td>
+                <td><img src="https://img.icons8.com/small/64/000000/yoga.png"/>&nbsp; Yoga</td>
                 <td>Do bendy positions to feel good</td>
             </tr>
             <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td><img src="https://img.icons8.com/small/64/000000/female-back.png"/>&nbsp; Arthritis Care</td>
-                <td>Make your mones stop hurting</td>
-            </tr>
-            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <td><img src="https://img.icons8.com/small/64/000000/make-decision.png"/>&nbsp; Concussion Treatment</td>
-                <td>Help your head stop hurting</td>
+                <td>Make your bones stop hurting</td>
             </tr>
             <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <td><img src="https://img.icons8.com/small/64/000000/squats.png"/>&nbsp; Joint Pain</td>
                 <td>What are you 60?</td>
             </tr>
+            <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td><img src="https://img.icons8.com/ios-glyphs/60/000000/meditation-guru.png"/>&nbsp; Meditation session</td>
+              <td>Spend some time in silence</td>
+          </tr>
         </tbody>
     </table>
+
+    <br>
+    <h2><img src="https://img.icons8.com/ios/50/000000/brain--v1.png"/>&nbsp; Neurological Care</h2>
+    <br>
+    <table id="services" class="table table-info table-hover">
+      <thead>
+          <tr>
+              <th scope="col"><h2>Service</h2></th>
+              <th scope="col"><h2>Description</h2></th>
+          </tr>
+      </thead>
+      <tbody>
+
+        <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <td><img src="https://img.icons8.com/small/64/000000/for-experienced.png"/>&nbsp; Neurological Rehab</td>
+            <td>Getcha brain fixed</td>
+        </tr>
+
+        <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <td><img src="https://img.icons8.com/small/64/000000/make-decision.png"/>&nbsp; Concussion Treatment</td>
+            <td>Help your head stop hurting</td>
+        </tr>
+        <tr class="service" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <td><img src="https://img.icons8.com/ios-glyphs/60/000000/therapy.png"/>&nbsp; Therapy</td>
+            <td>Talk it out with someone</td>
+        </tr>
+      </tbody>
+    </table>
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -109,24 +136,25 @@ Many websites will use what is called CSS grid layouts, where you will have a he
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                  <h5>Personal Info</h5>
                   Name:<br>
-                  <input type="text"><br>
+                  <input type="text" placeholder="Ex: John Doe"><br>
                   Phone Number:<br>
-                  <input type="tel"><br><br>
-
+                  <input type="number" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Ex: (123)456-7890"><br><br> <!--https://www.w3schools.com/tags/att_input_type_tel.asp-->
+                  <hr>
+                  <h5>Appointment Info</h5>
                   Date:<br>
                   <input type="date"><br>
                   Time:<br>
-                  <input type="time"><br>
-                  <br>                  
+                  <input type="time"><br>                  
                   Physiotherapist:<br>
-                  <select >
+                  <select>
                     <option>Dr. Vivian Jenson</option>
                     <option>Dr. Eric Kim</option>
                     <option>Chantal Erikson</option>
                   </select>
                   <hr>
-                  <h3 class="text-center">Credit card info </h3><br>
+                  <h5>Credit card info </h5>
                   <div class="row">
                     <div class="col">
                       Name:<br>
@@ -162,7 +190,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/card/
     -->
 
-    <h1 id="professionalsHeader" >Meet the Physicians!</h1>
+    <h1 id="professionalsHeader" > <img src="https://img.icons8.com/ios-filled/50/000000/medical-doctor.png"/>&nbsp; Meet the Physicians!</h1>
 
     <div  class="p-3">
       <div class="card">

@@ -19,3 +19,5 @@ $("#buttonHome").click(function() {
         scrollTop: $("body").offset().top
     }, 50);
 });
+
+//Some code based off of sample code found here https://stackoverflow.com/questions/23076191/jquery-scrolltop-with-offset
