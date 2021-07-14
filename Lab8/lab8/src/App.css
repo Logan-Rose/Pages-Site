@@ -1,16 +1,5 @@
-.App {
+.Home {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +13,49 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  list-style:none;
+  margin: 5px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+button{
+  color: white;
+  width: 100%;
+  background-color: teal;
+  text-shadow: black;
+  border:none;
+}
+
+button:hover{
+  transition: 0.25s;
+  background-color: #29b7df;
+  cursor: pointer;
+}
+
+.help{
+  border: solid 2px white;
+  display: flex;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  margin:10px;
+  justify-content: center;
+}
+
+.help:hover{
+  transition: 0.25s;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.helpSection{
+  display: flex;
+  justify-content: center;
 }
