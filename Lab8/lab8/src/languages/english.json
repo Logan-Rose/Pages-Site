@@ -1,0 +1,33 @@
+{
+    "TITLE":"Study Buddy",
+    "MENU": {
+        "COURSEINFO":"Enter Your Info",
+        "VIEWSESSIONS":"View Sessions",
+        "MYSESSIONS":"My Sessions",
+        "NEWSESSION":"New Session",
+        "ENGLISH": "English",
+        "FRENCH":"French"
+    },
+    "INFO" :{
+        "TITLE": "Enter Your Information",
+        "NAME":"Name",
+        "EMAIL":"Email",
+        "SCHOOL":"School",
+        "COURSES":"Courses",
+        "ADDCOURSES":"+ Add Courses"
+    },
+    "SESSIONS": {
+        "SIGNUP":"Sign Up",
+        "SESSIONS":"SESSIONS"
+    },
+    "NEW":{
+        "TITLE": "New Session",
+        "COURSE": "Course",
+        "SIZE": "Number of People",
+        "LOCATION": "Location",
+        "DATE": "Date",
+        "TIME": "Time"
+    },
+    "HELP": "Help"
+
+}

@@ -1,7 +1,13 @@
+body > #root > div {
+  min-height: 100vh;
+}
+.body{
+  background-color: #282c34;
+  border: solid 1px #282c34;
+}
 .Home {
   text-align: center;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -13,17 +19,17 @@
   color: white;
 }
 
-li{
+.mainMenuListItem{
   list-style:none;
   margin: 5px 0px;
 }
 
-ul{
+.mainMenuList{
   padding: 0px;
   margin: 0px;
 }
 
-button{
+.menuButton{
   color: white;
   width: 100%;
   background-color: teal;
@@ -31,7 +37,7 @@ button{
   border:none;
 }
 
-button:hover{
+.menuButton:hover{
   transition: 0.25s;
   background-color: #29b7df;
   cursor: pointer;
@@ -46,6 +52,8 @@ button:hover{
   padding: 0px;
   margin:10px;
   justify-content: center;
+  color: white;
+  text-decoration: none;
 }
 
 .help:hover{
@@ -58,4 +66,111 @@ button:hover{
 .helpSection{
   display: flex;
   justify-content: center;
+}
+
+.banner{
+
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+.bannerContainer{
+  top: 0px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 12%;
+  background-color: #363a42;
+  border-bottom: solid 2px white;
+}
+
+.main{
+  margin: 200px;
+  padding: 20px 0px;
+  min-height:auto;
+}
+.menuItems{
+  list-style: none;
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+.bannerMenu{
+  width: 60%;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.languageInput{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bannerMenuListItem{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
+  padding: 2px;
+  width: 22.5%;
+}
+.bannerTitle{
+  padding: 0px 25px;
+}
+.title{
+  text-decoration: none;
+  color: white;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 25px;
+  margin: 0px 20%;
+  padding: 15px;
+}
+
+.session{
+  border-bottom: solid 1px grey;
+  border-top: solid 1px grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 3px;
+  transition-duration: 0.25s;
+}
+
+.session:hover{
+  transition-duration: 0.25s;
+  padding: 10px 0px;
+  background-color: lightgrey;
+}
+
+.sessions{
+  width: 100%;
+  border: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.questionInput{
+  padding: 10px;
+  font-size: 18px;
+  border: solid 1px black;
 }

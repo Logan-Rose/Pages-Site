@@ -1,0 +1,32 @@
+{
+    "TITLE":"Un ami de révisions",
+    "MENU": {
+        "COURSEINFO":"Entrez vos informations",
+        "VIEWSESSIONS":"Afficher les séances",
+        "MYSESSIONS":"Mes séances",
+        "NEWSESSION":"Nouvelle session",
+        "ENGLISH": "Anglais",
+        "FRENCH": "Français"
+    },
+    "INFO" :{
+        "TITLE": "Entrez vos informations",
+        "NAME":"Nom",
+        "EMAIL":"Email",
+        "SCHOOL":"école",
+        "COURSES":"Cours",
+        "ADDCOURSES":"+ Ajouter des cours"
+    },
+    "SESSIONS": {
+        "SIGNUP":"S'inscrire"
+    },
+    "NEW":{
+        "TITLE": "Nouvelle session",
+        "COURSE": "Cours",
+        "SIZE": "nombre de personnes",
+        "LOCATION": "emplacement",
+        "DATE": "Date",
+        "TIME": "temps"
+    },
+    "HELP": "Aider"
+
+}
